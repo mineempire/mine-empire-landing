@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  border-radius: 50px;
+  border-radius: 15px;
   border: none;
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -13,6 +13,7 @@ export const Button = styled.button`
   font-style: normal;
   font-weight: 600;
   color: ${({ theme }) => theme.text.color};
+  margin: 0 10px 0 10px;
 
   &:hover {
     opacity: 0.9;

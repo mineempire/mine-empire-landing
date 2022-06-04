@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
 export const LandingNav = styled.nav`
   display: flex;
   justify-content: space-between;
-  padding: 31px;
+  padding: 20px;
   align-items: center;
 `;
 

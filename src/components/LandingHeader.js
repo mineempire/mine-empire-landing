@@ -3,7 +3,7 @@ import {
   LandingNav,
   Logo,
   NavLink,
-  NavActions
+  NavActions,
 } from "./styles/Header.styled";
 import { Container } from "./styles/Container.styled";
 import { Button } from "./styles/Button.styled";
@@ -13,7 +13,7 @@ export default function Header() {
     <StyledHeader>
       <Container>
         <LandingNav>
-          <Logo src="./img/me-logo@2x.png" alt="" />
+          <Logo src="./img/logo-icon.png" alt="" />
           <NavActions>
             <NavLink>Docs</NavLink>
             <Button>Launch</Button>
