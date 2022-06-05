@@ -22,6 +22,10 @@ export const NavLink = styled.div`
   font-weight: 600;
   height: 16px;
   padding: 30px;
+
+  &:hover {
+    color: ${({ theme }) => theme.text.orange};
+  }
 `;
 
 export const NavActions = styled.div`

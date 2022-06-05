@@ -11,6 +11,15 @@ export const Planet = styled.div`
   }
 `;
 
+export const TokenInfoCard = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #312525;
+  border-radius: 15px;
+  width: 360px;
+  margin: 0 50px 0 0;
+`;
+
 export const PlanetCardBig = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +33,86 @@ export const PlanetCardBigImgContainer = styled.div`
   img {
     width: 200px;
     padding: 15px;
+  }
+`;
+
+export const TokenInfoCardImgContainer = styled.div`
+  display: block;
+  img {
+    width: 80px;
+    padding: 10px;
+  }
+`;
+
+export const TokenInfoTitleContainer = styled.div`
+  display: flex;
+  width: 240px;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+
+  img {
+    width: 30px;
+    margin: 0 5px 0 5px;
+  }
+
+  h1 {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xxxl};
+    color: ${({ theme }) => theme.text.color};
+    font-style: normal;
+    font-weight: 700;
+    margin: 3px 15px 3px 5px;
+  }
+
+  h3 {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xxl};
+    color: ${({ theme }) => theme.text.labelColor};
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+  }
+`;
+
+export const CardFeature = styled.div`
+  display: flex;
+  align-items: center;
+  background-color: #463d3d;
+  border-radius: 15px;
+  padding: 3px 10px 3px 10px;
+
+  img {
+    margin: 0;
+  }
+`;
+
+export const TokenInfoCardStats = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+  h3#description {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.l};
+    color: ${({ theme }) => theme.text.labelColor};
+    font-style: normal;
+    font-weight: 600;
+    width: 240px;
+    margin: 0 0 5px 20px;
+    text-align: left;
+  }
+  h3#stat {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.l};
+    color: ${({ theme }) => theme.text.color};
+    font-style: normal;
+    font-weight: 600;
+    width: 80px;
+    margin: 0 0 5px 0;
+    text-align: right;
   }
 `;
 
@@ -46,7 +135,6 @@ export const PlanetCardBigTitleContainer = styled.div`
 
 export const PlanetCardBigProductionInfo = styled.div`
   display: flex;
-  width: 320px;
   margin: 25px auto 25px auto;
   align-items: center;
   background-color: #463d3d;
@@ -104,7 +192,15 @@ export const CardStats = styled.div`
   }
 `;
 
+export const CardDescription = styled.div`
+  display: flex;
+  margin: 15px 0 0 0;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const CardButtonContainer = styled.div`
   display: flex;
-  margin: 50px auto 50px auto;
+  margin: 30px auto 30px auto;
 `;

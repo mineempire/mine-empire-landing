@@ -8,7 +8,11 @@ import {
   Description,
   SocialIcon,
 } from "./styles/Body.styled";
-import { ContainerFlex, ContainerLeft } from "./styles/Container.styled";
+import {
+  ContainerFlex,
+  ContainerLeft,
+  BulletPoint,
+} from "./styles/Container.styled";
 import {
   PlanetCardBig,
   PlanetCardBigImgContainer,
@@ -113,6 +117,41 @@ export default function Body() {
           </PlanetCardBig>
         </ContainerLeft>
       </ContainerFlex>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <ContainerFlex bg="#11182780" justify="space-between">
+        <ContainerLeft>
+          <img src="./img/asteroid-drill.png" alt="" width="500px"></img>
+        </ContainerLeft>
+        <ContainerLeft>
+          <Title2>Mint, Upgrade and Expand your Mine Empire</Title2>
+          <BulletPoint>
+            <img src="./img/bullet.svg" alt=""></img>
+            <H1>Stake drills in planets and earn resources</H1>
+          </BulletPoint>
+          <BulletPoint>
+            <img src="./img/bullet.svg" alt=""></img>
+            <H1>Upgrade drills with Cosmic Cash ($CSC) to boost production</H1>
+          </BulletPoint>
+          <BulletPoint>
+            <img src="./img/bullet.svg" alt=""></img>
+            <H1>
+              Use resources to unlock new equipment and expand your empire
+            </H1>
+          </BulletPoint>
+          <img src="./img/cobalt.png" alt="" width="300px"></img>
+        </ContainerLeft>
+      </ContainerFlex>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
     </StyledBody>
   );
 }

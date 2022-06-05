@@ -7,6 +7,7 @@ import {
 } from "./styles/Header.styled";
 import { Container } from "./styles/Container.styled";
 import { Button } from "./styles/Button.styled";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -16,7 +17,9 @@ export default function Header() {
           <Logo src="./img/logo-icon.png" alt="" />
           <NavActions>
             <NavLink>Docs</NavLink>
-            <Button>Launch</Button>
+            <Link to="/dashboard">
+              <Button>Launch</Button>
+            </Link>
           </NavActions>
         </LandingNav>
       </Container>

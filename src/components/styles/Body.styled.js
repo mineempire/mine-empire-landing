@@ -29,6 +29,7 @@ export const H1 = styled.h1`
   color: ${({ theme }) => theme.text.color};
   font-style: normal;
   font-weight: 700;
+  margin: 10px 15px 10px 15px;
 `;
 
 export const H2 = styled.h2`
@@ -45,6 +46,24 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.text.color};
   font-style: normal;
   font-weight: 400;
+`;
+
+export const SmallText = styled.p`
+  font-family: ${({ theme }) => theme.text.fontFamily};
+  font-size: ${({ theme }) => theme.text.size.m};
+  color: ${({ theme }) => theme.text.color};
+  font-style: normal;
+  font-weight: 400;
+  margin: 5px;
+`;
+
+export const SmallTextDollar = styled.p`
+  font-family: ${({ theme }) => theme.text.fontFamily};
+  font-size: ${({ theme }) => theme.text.size.m};
+  color: ${({ theme }) => theme.text.green};
+  font-style: normal;
+  font-weight: 600;
+  margin: 5px;
 `;
 
 export const SocialIcon = styled.img`
