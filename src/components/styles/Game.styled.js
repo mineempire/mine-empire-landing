@@ -204,3 +204,53 @@ export const CardButtonContainer = styled.div`
   display: flex;
   margin: 30px auto 30px auto;
 `;
+
+export const PlayerResources = styled.div`
+  background-color: #312525;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin 0 25px 0 25px;
+
+  h2 {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xl};
+    color: ${({ theme }) => theme.text.color};
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+`;
+
+export const PlayerResourceRow = styled.div`
+  display: flex;
+  align-items: center;
+
+  h3#description {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xl};
+    color: ${({ theme }) => theme.text.labelColor};
+    font-style: normal;
+    font-weight: 400;
+    width: 200px;
+    text-align: left;
+    margin: 0 0 0 15px;
+  }
+  h3#stat {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xl};
+    color: ${({ theme }) => theme.text.color};
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    text-align: right;
+    text-align: right;
+  }
+
+  img {
+    width: 35px;
+  }
+`;

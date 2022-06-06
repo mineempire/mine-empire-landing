@@ -20,3 +20,24 @@ export const Button = styled.button`
     transform: scale(0.98);
   }
 `;
+
+export const ButtonSmall = styled.button`
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-weight: 400;
+  padding: 4px 25px 4px 25px;
+  background: ${({ theme }) => theme.button.bg};
+  font-family: ${({ theme }) => theme.text.fontFamily};
+  font-size: ${({ theme }) => theme.text.size.l};
+  font-style: normal;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text.color};
+  margin: 0 0 0 10px;
+
+  &:hover {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+`;
