@@ -224,6 +224,10 @@ export default function Body() {
           </PlayerResourceRow>
         </PlayerResources>
       </ContainerFlex>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
     </StyledBody>
   );
 }

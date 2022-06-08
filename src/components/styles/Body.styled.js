@@ -41,8 +41,9 @@ export const H2 = styled.h2`
 `;
 
 export const Description = styled.p`
+  margin: 0;
   font-family: ${({ theme }) => theme.text.fontFamily};
-  font-size: ${({ theme }) => theme.text.size.l};
+  font-size: ${({ theme }) => theme.text.size.xl};
   color: ${({ theme }) => theme.text.color};
   font-style: normal;
   font-weight: 400;

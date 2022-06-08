@@ -19,7 +19,7 @@ import {
   PlanetCardBigTitleContainer,
   PlanetCardBigProductionInfo,
   CardButtonContainer,
-  CardStats,
+  BigCardStats,
 } from "./styles/Game.styled";
 import { Button } from "./styles/Button.styled";
 
@@ -101,7 +101,7 @@ export default function Body() {
               <h3 id="production">Production:</h3>
               <h3 id="amount">1,135 / Day</h3>
             </PlanetCardBigProductionInfo>
-            <CardStats>
+            <BigCardStats>
               <h3 id="description">Type</h3>
               <h3 id="stat">Asteroid</h3>
               <h3 id="description">Base Production</h3>
@@ -110,7 +110,7 @@ export default function Body() {
               <h3 id="stat">33,193</h3>
               <h3 id="description">Your Production</h3>
               <h3 id="stat">0 / 33,193</h3>
-            </CardStats>
+            </BigCardStats>
             <CardButtonContainer>
               <Button>Learn More</Button>
             </CardButtonContainer>

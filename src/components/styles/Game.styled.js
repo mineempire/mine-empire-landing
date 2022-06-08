@@ -165,7 +165,7 @@ export const PlanetCardBigProductionInfo = styled.div`
   }
 `;
 
-export const CardStats = styled.div`
+export const BigCardStats = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: max;
@@ -252,5 +252,153 @@ export const PlayerResourceRow = styled.div`
 
   img {
     width: 35px;
+  }
+`;
+
+export const PlanetCard = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #312525;
+  border-radius: 15px;
+  width: 360px;
+  margin: 25px;
+`;
+
+export const PlanetCardImgContainer = styled.div`
+  display: block;
+  img {
+    width: 120px;
+    padding: 15px;
+  }
+`;
+
+export const PlanetCardTitleContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 210px;
+
+  h3 {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xxl};
+    color: ${({ theme }) => theme.text.labelColor};
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+  }
+`;
+
+export const PlanetCardProductionInfo = styled.div`
+  display: flex;
+  margin: 25px auto 25px auto;
+  align-items: center;
+  background-color: #463d3d;
+  border-radius: 15px;
+
+  img {
+    margin: 10px;
+    width: 30px;
+  }
+
+  h3#production {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.l};
+    color: ${({ theme }) => theme.text.color};
+    font-style: normal;
+    font-weight: 400;
+    margin: 10px;
+  }
+
+  h3#amount {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.l};
+    color: ${({ theme }) => theme.text.orange};
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    margin: 10px;
+  }
+`;
+export const CardStats = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: max;
+  width: 480px;
+
+  h3#description {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xl};
+    color: ${({ theme }) => theme.text.labelColor};
+    font-style: normal;
+    font-weight: 600;
+    width: 155px;
+    margin: 0 0 5px 25px;
+    text-align: left;
+  }
+  h3#stat {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xl};
+    color: ${({ theme }) => theme.text.color};
+    font-style: normal;
+    font-weight: 600;
+    width: 155px;
+    margin: 0 25px 5px 0;
+    text-align: right;
+  }
+`;
+
+export const NFTCard = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #312525;
+  border-radius: 15px;
+  width: 400px;
+  margin: 25px;
+  justify-content: center;
+
+  img#drill-image {
+    width: 300px;
+    padding: 15px;
+  }
+`;
+
+export const NFTCardHeader = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+
+  img {
+    width: 85px;
+    height: 83px;
+  }
+`;
+
+export const NFTCardStats = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: max;
+  width: 400px;
+  margin: 25px 0 0 0;
+
+  h3#description {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xxl};
+    color: ${({ theme }) => theme.text.labelColor};
+    font-style: normal;
+    font-weight: 600;
+    width: 175px;
+    margin: 0 0 5px 25px;
+    text-align: left;
+  }
+  h3#stat {
+    font-family: ${({ theme }) => theme.text.fontFamily};
+    font-size: ${({ theme }) => theme.text.size.xxl};
+    color: ${({ theme }) => theme.text.color};
+    font-style: normal;
+    font-weight: 600;
+    width: 175px;
+    margin: 0 25px 5px 0;
+    text-align: right;
   }
 `;

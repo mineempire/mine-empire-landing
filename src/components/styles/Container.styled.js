@@ -30,6 +30,17 @@ export const ContainerLeft = styled.div`
   padding: 60px;
 `;
 
+export const PageTitleLeft = styled.div`
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: auto;
+  text-align: left;
+  padding-left: 100px;
+`;
+
 export const BulletPoint = styled.div`
   display: flex;
 `;

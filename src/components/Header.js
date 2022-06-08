@@ -21,10 +21,18 @@ export default function Header() {
             <Link to="/dashboard">
               <NavLink>Dashboard</NavLink>
             </Link>
-            <NavLink>Cosmos</NavLink>
-            <NavLink>Market</NavLink>
-            <NavLink>Refinery</NavLink>
-            <NavLink>Converter</NavLink>
+            <Link to="/cosmos">
+              <NavLink>Cosmos</NavLink>
+            </Link>
+            <Link to="/market">
+              <NavLink>Market</NavLink>
+            </Link>
+            <Link to="/refinery">
+              <NavLink>Refinery</NavLink>
+            </Link>
+            <Link to="/converter">
+              <NavLink>Converter</NavLink>
+            </Link>
           </NavActions>
           <NavActions>
             <Button>Connect</Button>
