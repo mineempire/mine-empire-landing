@@ -1,22 +1,7 @@
-import {
-  StyledBody,
-  Logo,
-  Title,
-  Title2,
-  H1,
-  H2,
-  Description,
-  SocialIcon,
-  SmallText,
-  SmallTextDollar,
-} from "./styles/Body.styled";
+import { StyledBody, Title2, H1, Description } from "./styles/Body.styled";
 import {
   Container,
   ContainerFlex,
-  ContainerLeft,
-  BulletPoint,
-  DataDiv,
-  ContainerFlexColumn,
   PageTitleLeft,
 } from "./styles/Container.styled";
 import {
@@ -25,21 +10,9 @@ import {
   PlanetCardTitleContainer,
   PlanetCardProductionInfo,
   CardStats,
-  PlanetCardBig,
-  PlanetCardBigImgContainer,
-  PlanetCardBigTitleContainer,
-  PlanetCardBigProductionInfo,
   CardButtonContainer,
-  TokenInfoCardStats,
-  TokenInfoCard,
-  TokenInfoCardImgContainer,
-  TokenInfoTitleContainer,
-  CardFeature,
-  CardDescription,
-  PlayerResources,
-  PlayerResourceRow,
 } from "./styles/Game.styled";
-import { Button, ButtonSmall } from "./styles/Button.styled";
+import { Button } from "./styles/Button.styled";
 
 export default function Body() {
   return (

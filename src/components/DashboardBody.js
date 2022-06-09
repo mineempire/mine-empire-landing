@@ -1,27 +1,15 @@
 import {
   StyledBody,
   Logo,
-  Title,
-  Title2,
-  H1,
-  H2,
-  Description,
-  SocialIcon,
   SmallText,
   SmallTextDollar,
 } from "./styles/Body.styled";
 import {
   ContainerFlex,
-  ContainerLeft,
-  BulletPoint,
   DataDiv,
   ContainerFlexColumn,
 } from "./styles/Container.styled";
 import {
-  PlanetCardBig,
-  PlanetCardBigImgContainer,
-  PlanetCardBigTitleContainer,
-  PlanetCardBigProductionInfo,
   CardButtonContainer,
   TokenInfoCardStats,
   TokenInfoCard,
