@@ -1,3 +1,5 @@
+import "../index.css";
+
 const theme = {
   colors: {
     header: "#11182780",
@@ -10,9 +12,9 @@ const theme = {
   text: {
     color: "#fff",
     labelColor: "#949494",
+    fontFamily: "Montserrat",
     orange: "#df4242",
     green: "#36d846",
-    fontFamily: '"Montserrat", Halvetica',
     size: {
       s: "12px",
       m: "14px",
