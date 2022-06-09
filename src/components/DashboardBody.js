@@ -35,7 +35,7 @@ export default function Body() {
       <ContainerFlex>
         <TokenInfoCard>
           <TokenInfoCardImgContainer>
-            <img src="./img/gem-icon.png" />
+            <img src="./img/gem-icon.png" alt="" />
           </TokenInfoCardImgContainer>
           <TokenInfoTitleContainer>
             <TokenInfoTitleContainer>
@@ -46,7 +46,7 @@ export default function Body() {
               <img src="./img/coinmarketcap-icon.png" alt="" />
               <img src="./img/coingecko-icon.png" alt="" />
               <CardFeature>
-                <img src="./img/plus.svg" />
+                <img src="./img/plus.svg" alt="" />
                 <img src="./img/metamask-icon.png" alt="" />
               </CardFeature>
             </TokenInfoTitleContainer>
