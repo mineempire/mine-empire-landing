@@ -1,23 +1,33 @@
-import { Route, Routes } from "react-router-dom";
-import DashboardPage from "./pages/Dashboard";
-import LandingPage from "./pages/Landing";
-import CosmosPage from "./pages/Cosmos";
-import MarketPage from "./pages/Market";
-import RefineryPage from "./pages/Refinery";
-import ConverterPage from "./pages/Converter";
+import React, { useState, useEffect } from "react";
+import GlobalStyle from "./globalStyles";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+//Pages
+import Home from "./pages/Home";
+import Footer from "./components/Footer/Footer";
+import LoadingScreen from "./components/Loading/Loading";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 8000);
+  }, []);
+
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
-        <Route path="/cosmos" element={<CosmosPage />} />
-        <Route path="/market" element={<MarketPage />} />
-        <Route path="/refinery" element={<RefineryPage />} />
-        <Route path="/converter" element={<ConverterPage />} />
-      </Routes>
-    </div>
+    <>
+      {loading === false ? (
+        <Router>
+          <GlobalStyle />
+          <Switch>
+            <Route path="/" exact component={Home} />
+          </Switch>
+          <Footer />
+        </Router>
+      ) : (
+        <LoadingScreen />
+      )}
+    </>
   );
 }
 
