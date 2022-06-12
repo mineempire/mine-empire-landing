@@ -20,9 +20,6 @@ export const footerSocialData = [
 
 export const footerData = [
   {
-    title: "Main",
-  },
-  {
     title: "Privacy Policy",
   },
   {

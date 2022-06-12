@@ -4,7 +4,6 @@ const LoadingScreen = () => {
     <>
       <LoadingContainer>
         <img src="../../assets/loading-screen-2.gif" alt="" />
-        Loading...
       </LoadingContainer>
     </>
   );
