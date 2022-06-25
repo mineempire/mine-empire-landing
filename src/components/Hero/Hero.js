@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, MainHeading } from "../../globalStyles";
+import { Container } from "../../globalStyles";
 import {
   HeroVideo,
   HeroSection,
@@ -10,9 +10,10 @@ import {
 const Hero = () => {
   return (
     <HeroSection>
-      <HeroVideo src="./assets/hero.mp4" autoPlay muted />
+      <HeroVideo>
+        <img src="./assets/discord-banner.png" alt="" />
+      </HeroVideo>
       <Container>
-        <MainHeading>Open Economy Web3 Game</MainHeading>
         <ButtonWrapper>
           <HeroButton>
             <a

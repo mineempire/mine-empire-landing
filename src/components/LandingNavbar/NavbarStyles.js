@@ -27,7 +27,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  color: #463d3d;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -35,7 +35,13 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   z-index: 50;
-  width: 22rem;
+  width: 25rem;
+
+  @media screen and (max-width: 960px) {
+    p {
+      display: none;
+    }
+  }
 `;
 
 export const NavIcon = styled.img`
@@ -65,22 +71,6 @@ export const NavMenu = styled.ul`
   text-align: center;
   width: 100%;
   justify-content: flex-end;
-
-  @media screen and (max-width: 960px) {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    padding-top: 30%;
-    top: 0;
-    left: 0;
-    opacity: ${({ show }) => (show ? 1 : 0)};
-    visibility: ${({ show }) => (show ? "visible" : "hidden")};
-    transform: translateY(${({ show }) => (show ? "0" : "-10px")});
-    transition: opacity 0.5s ease;
-    background-color: #111827;
-  }
 
   > li:first-child {
     margin-left: auto;

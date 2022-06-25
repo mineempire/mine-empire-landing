@@ -1,18 +1,14 @@
 import React from "react";
 
 import {
-  FooterLinkItems,
-  FooterLinkTitle,
   FooterLogo,
   SocialIcon,
   FooterRights,
   FooterSocialIcon,
   FooterWrapper,
-  FooterLinkItemsContainer,
   FooterColumn,
   FooterContainerFlex,
 } from "./FooterStyles";
-import { footerData } from "../../data/FooterData";
 import { Row, Section } from "../../globalStyles";
 
 function Footer() {
@@ -57,13 +53,6 @@ function Footer() {
               </FooterSocialIcon>
             </Row>
           </FooterColumn>
-          <FooterLinkItemsContainer>
-            {footerData.map((footerItem, index) => (
-              <FooterLinkItems key={index}>
-                <FooterLinkTitle>{footerItem.title}</FooterLinkTitle>
-              </FooterLinkItems>
-            ))}
-          </FooterLinkItemsContainer>
         </FooterContainerFlex>
         <FooterRights>Mine Empire © 2022</FooterRights>
       </FooterWrapper>

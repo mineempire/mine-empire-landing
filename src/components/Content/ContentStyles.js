@@ -30,6 +30,23 @@ export const ContentColumn = styled(motion.div)`
   }
 `;
 
+export const ContentColumnResources = styled(motion.div)`
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    max-width: 100% !important;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
@@ -140,5 +157,17 @@ export const ContentButton = styled(motion.button)`
 
   &:hover {
     color: ${({ inverse }) => (inverse ? "white" : "black")};
+  }
+`;
+
+export const ResourceImgWrapper = styled(motion.div)`
+  display: flex;
+  justify-content: "flex-end";
+  max-height: 700px;
+  justify-content: center;
+  position: relative;
+  img {
+    height: 150px;
+    margin: 10px;
   }
 `;

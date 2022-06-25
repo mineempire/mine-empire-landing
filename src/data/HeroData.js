@@ -16,7 +16,7 @@ export const heroTwo = {
 };
 
 export const heroThree = {
-  reverse: true,
+  reverse: false,
   inverse: false,
   topLine: {
     text: "",
@@ -29,6 +29,23 @@ export const heroThree = {
   linkTo:
     "https://app.gitbook.com/s/OvpPhNEqk5SQ2wdrHCTC/equipment/basic-drill",
   imgStart: "",
-  img: "./assets/asteroid-drill.png",
+  img: "./assets/AsteroidDrill.png",
+  start: "true",
+};
+
+export const heroFour = {
+  reverse: true,
+  inverse: false,
+  topLine: {
+    text: "",
+  },
+  headline: "Mine Rare Resources",
+  description:
+    "Unique resources can be mined from different asteroids and planets. Combine, refine or convert these resources to Cosmic Cash ($CSC). Some resources are more valuable than others and the combination strategies are limitless!",
+
+  buttonLabel: "Resources Wiki",
+
+  linkTo: "https://aslan-1.gitbook.io/mine-empire/resources",
+  imgStart: "",
   start: "true",
 };

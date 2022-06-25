@@ -9,14 +9,24 @@ export const HeroSection = styled.section`
   box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
 `;
 
-export const HeroVideo = styled.video`
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+export const HeroVideo = styled.div`
+  display: flex;
   top: 0;
   position: absolute;
   z-index: -1;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 960px) {
+    img {
+      width: 300%;
+    }
+  }
 `;
 
 export const HeroText = styled.p`
@@ -34,11 +44,12 @@ export const ButtonWrapper = styled.div`
   justify-content: center;
   flex-flow: wrap;
   gap: 0.5rem;
+  margin-top: 175px;
 `;
 
 export const HeroButton = styled(Button)`
   color: black;
-  border: 2px solid #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   padding: 0px;
 
   img {
@@ -46,8 +57,8 @@ export const HeroButton = styled(Button)`
   }
 
   &:before {
-    background: #fff;
-    height: 500%;
+    background: rgba(255, 255, 255, 0.5);
+    height: 300%;
     width: 150%;
   }
 
