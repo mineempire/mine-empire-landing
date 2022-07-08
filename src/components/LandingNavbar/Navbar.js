@@ -19,7 +19,13 @@ const Navbar = () => {
             <p>Mine Empire</p>
           </NavLogo>
           <NavMenu show={true}>
-            <Button>Coming July 9th</Button>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://app.mineempire.io"
+            >
+              <Button>Launch Dapp</Button>
+            </a>
           </NavMenu>
         </NavbarContainer>
       </Nav>
